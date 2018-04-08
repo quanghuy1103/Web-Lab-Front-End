@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="a.css" />
+    <script src="a.js">
+    </script>
+</head>
+<body>
+<div style=" text-align: center; color: grey; font-size: 35px;">Đồ chơi công nghệ</div>
+<div id="menu">
+    <ul>
+        <li>
+            <a href="a.html">Trang chủ</a>
+        </li>
+        <li onmouseover="show('sdd')" onmouseout="unshow('sdd')">
+            <a href="ssd.html">SSD</a>
+            <ul id="sdd">
+                <li><a href="Samsung.html"> Samsung    </a></li>
+                <li><a href="Sandisk.html"> Sandisk    </a></li>
+                <li><a href="Crucial.html"> Crucial    </a></li>
+            </ul>
+        </li>
+        <li onmouseover="show('ram')" onmouseout="unshow('ram')">
+            <a href="ram.html">RAM</a>
+            <ul id="ram">
+            </ul>
+        </li>
+        <li>
+            <a href="cart.html">Giỏ Hàng</a>
+        </li>
+    </ul>
+</div>
+<div id="contents2">
+    <div id="dau"><ul>
+        <li><a href="a.html">Trang chủ</a> >> <a href="ssd.html">SSD</a> >> <a href="Crucial.html">Crucial</a></li>
+    </ul></div>
+
+    <div id="detail">
+        <div id="a1"><img src="anh/cru-bx100-00.jpg">
+            <h1>3.400.000 VND</h1>
+        </div>
+        <div id="a2">
+            <div class="name"><h2>SSD Crucial BX100 500GB SATA 3.0</h2></div>
+            <div class="infor">
+                <h3>Thông tin sản phẩm :</h3>
+                <p>-Hãng sản xuất: Crucial<br/>
+                -Kích thước: 2.5 Inch, 7mm<br/>
+                -Dung lượng 500GB <br/>
+                -Tốc độ đọc: 535MB/s<br/>
+                -Tốc độ ghi: 450MB/s</p>
+            </div>
+            <div>
+                <div id="addToCart" onclick="add('cr1','anh/cru-bx100-00.jpg','SSD Crucial BX100 500GB SATA 3.0',3400000)">Thêm vào giỏ hàng</div>
+            </div>
+        </div>
+    </div>
+    <div id="cuoi">
+        <div id="d1"><h2>Liên hệ:</h2>
+            <p><b>Email: huybqse62273@fpt.edu.vn<br/>
+                Phone : 0123456789</b></p>
+        </div>
+        <div id="d2">
+            <b>Copyright © 2017 Google-sama.<br/>
+                All Rights Reserved</b>
+        </div>
+    </div>
+</div>
+</body>
+</html>

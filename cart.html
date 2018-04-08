@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="a.css" />
+    <script src="a.js">
+        function show(x) {
+            var t=document.getElementById(x);
+            t.style.display="block";
+        }
+        function unshow(x){
+            var t=document.getElementById(x);
+            t.style.display="none";
+        }
+    </script>
+</head>
+<body onload="xuathien()">
+<div style=" text-align: center; color: grey; font-size: 35px;">Đồ chơi công nghệ</div>
+<div id="menu">
+    <ul>
+        <li>
+            <a href="a.html">Trang chủ</a>
+        </li>
+        <li onmouseover="show('sdd')" onmouseout="unshow('sdd')">
+            <a href="ssd.html">SSD</a>
+            <ul id="sdd">
+                <li><a href="Samsung.html"> Samsung    </a></li>
+                <li><a href="Sandisk.html"> Sandisk    </a></li>
+                <li><a href="Crucial.html"> Crucial    </a></li>
+            </ul>
+        </li>
+        <li onmouseover="show('ram')" onmouseout="unshow('ram')">
+            <a href="ram.html">RAM</a>
+            <ul id="ram">
+            </ul>
+        </li>
+        <li>
+            <a href="cart.html">Giỏ Hàng</a>
+        </li>
+    </ul>
+</div>
+
+    <div style=" width: 100%; float: left; margin-top: 20px;">
+        <div id="dau"><ul>
+            <li><a href="a.html">Trang chủ</a> >> <a href="cart.html">Giỏ Hàng</a></li>
+        </ul></div>
+        <table id="cart" cellpadding="5" border="2" style="border-color: #cccccc; border-collapse: collapse; width: 100%; margin-top: 30px;" id="cart">
+
+        </table>
+    </div>
+<div id="cuoi" style="margin-left: 150px;">
+    <div id="d1"><h2>Liên hệ:</h2>
+        <p><b>Email: huybqse62273@fpt.edu.vn<br/>
+            Phone : 0123456789</b></p>
+    </div>
+    <div id="d2">
+        <b>Copyright © 2017 Google-sama.<br/>
+            All Rights Reserved</b>
+    </div>
+</div>
+</body>
+</html>
